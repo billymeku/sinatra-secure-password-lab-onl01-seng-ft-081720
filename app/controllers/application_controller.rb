@@ -23,7 +23,7 @@ class ApplicationController < Sinatra::Base
     pass = params[:password]
     if user && pass 
       redirect "/login"
-    else
+    else !user && !pass 
       redirect "/failure"
     end
   end
