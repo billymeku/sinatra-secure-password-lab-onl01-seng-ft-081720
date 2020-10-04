@@ -22,7 +22,7 @@ class ApplicationController < Sinatra::Base
     # user = params[:username]
     # pass = params[:password]
     if logged_in?
-      redirect "/login"
+      redirect "/account"
     else 
       redirect "/failure"
     end
